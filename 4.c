@@ -2,27 +2,13 @@
 #include<conio.h>
 int main()
 {
-    int a ;
-    printf("Enter any year to find its leap year =>");
-    scanf("%d",&a);
-    if (a%4==0)
+    int a,b;
+    for(a=1;a<5;a++)
     {
-        if(a%100==0)
+        for(b=64+a;b<64+a*2;b++)
         {
-            if (a%400==0)
-            {
-                printf("Entered year %d  is leap year ",a);
-            }
-            else{
-                printf("Entered year %d is not a leap year ",a);
-            }
+            printf("%c",b);
         }
-        else{
-            printf("Entered year %d is leap year ",a);
-        }
-    }
-    else
-    {
-        printf("Entered year %d is not  leap year ",a);
+        printf("\n");
     }
 }

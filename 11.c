@@ -5,17 +5,19 @@ int main()
     int a,b,c,d,s;
     printf("Enter any number to print the pattern =>");
     scanf("%d",&a);
-    for (b=1;b<=a;b++)
+    for(b=1;b<=a;b++)
     {
-        d=b;
-        for (s=1;s<30+(a-b);s++)
+        for(c=1;c<=b;c++)
+        {
+            printf("%d",c);
+        }
+        for(c=1;c<=2*(a-b);c++)
         {
             printf(" ");
         }
-        for (c=1;c<b*2;c++)
+        for(c=b;c>=1;c--)
         {
-            printf("%d",(d>(b*2)-1?d-2*(d-(b*2-1)):d));
-            d++;
+            printf("%d",c);
         }
         printf("\n");
     }

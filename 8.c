@@ -2,23 +2,19 @@
 #include<conio.h>
 int main()
 {
-    int x,y;
-    printf("Enter the coordinate point (x y) format =>");
-    scanf("%d %d",&x,&y);
-    if (x>=0 && y>=0)
+    int a,b,c,d,s;
+    printf("Enter any number to print the pattern =>");
+    scanf("%d",&a);
+    for (b=1;b<=a;b++)
     {
-        printf("FIRST QUADERENT");
-    }
-    else if(x<=0 && y>=0)
-    {
-        printf("SECOND QUADERENT");
-    }
-    else if (x<=0 && y<=0)
-    {
-        printf("THIERD QUADERENT");
-    }
-    else if(x>=0 && y<=0)
-    {
-        printf("FOURTH QUADERENT");
+        for (s=1;s<=(a-b);s++)
+        {
+            printf(" ");
+        }
+        for (c=1;c<b*2;c++)
+        {
+            printf("*");
+        }
+        printf("\n");
     }
 }

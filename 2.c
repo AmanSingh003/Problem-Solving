@@ -2,8 +2,15 @@
 #include<conio.h>
 int main()
 {
-    int a,b,c;
-    printf("Enter any three number =>");
-    scanf("%d %d %d",&a,&b,&c);
-    printf("the largest among entered number is=>%d",(a>b?(a>c?a:c):(b>c?b:c)));
+    int a,b,x;
+    printf("Enter any number  for pattern =>");
+    scanf("%d",&x);
+    for(a=1;a<=x;a++)
+    {
+        for(b=a;b<2*a;b++)
+        {
+            printf("%d ",b);
+        }
+        printf("\n");
+    }
 }

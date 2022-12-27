@@ -2,31 +2,21 @@
 #include<conio.h>
 int main()
 {
-    int c;
-    printf("Enter temperature in centigrade=>");
-    scanf("%d",&c);
-    if(c<0)
+    int a,b,c,d,s;
+    printf("Enter any number to print the pattern =>");
+    scanf("%d",&a);
+    for (b=1;b<=a;b++)
     {
-        printf("FREEZING WEATHER");
-    }
-    else if (c>=0 && c<10)
-    {
-       printf("THEN VERY COLD WEATHER");
-    }
-    else if (c>=10 && c<20)
-    {
-        printf("COLD WEATHER");
-    }
-    else if (c>=20 && c<30)
-    {
-        printf("NORMOL IN TEMP");
-    }
-    else if (c>=30 && c<40)
-    {
-        printf("HOT");
-    }
-    else
-    {
-        printf("ITS VERY HOT");
+        d=b;
+        for (s=1;s<30+(a-b);s++)
+        {
+            printf(" ");
+        }
+        for (c=1;c<b*2;c++)
+        {
+            printf("%d",d);
+            d=(c<b?(--d):(++d));
+        }
+        printf("\n");
     }
 }

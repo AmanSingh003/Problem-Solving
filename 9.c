@@ -7,15 +7,25 @@ int main()
     scanf("%d",&a);
     for (b=1;b<=a;b++)
     {
-        d=b;
-        for (s=1;s<30+(a-b);s++)
+        for (s=1;s<=(a-b);s++)
         {
             printf(" ");
         }
         for (c=1;c<b*2;c++)
         {
-            printf("%d",(d>(b*2)-1?d-2*(d-(b*2-1)):d));
-            d++;
+            printf("*");
+        }
+        printf("\n");
+    }
+    for (b=a-1;b>=1;b--)
+    {
+        for (s=1;s<=(a-b);s++)
+        {
+            printf(" ");
+        }
+        for (c=1;c<b*2;c++)
+        {
+            printf("*");
         }
         printf("\n");
     }

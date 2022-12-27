@@ -2,15 +2,13 @@
 #include<conio.h>
 int main()
 {
-    char a;
-    printf("Enter any character =>");
-    scanf("%c",&a);
-    if ((a>64) && (a<91))
+    int a,b;
+    for(a=1;a<=3;a++)
     {
-        printf("Entered character is Capital latter ");
-    }
-    else
-    {
-            printf("Entered character is small latter");
+        for(b=65;b<a+65;b++)
+        {
+            printf("%c",b);
+        }
+        printf("\n");
     }
 }
